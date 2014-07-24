@@ -24,6 +24,16 @@
 		</noscript>
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+
+		<script>
+		$(document).ready(function(){
+		  $(".button").click(function( event ){
+		    event.preventDefault();
+		    $("#div1").addClass("DispBlock")
+		  });
+		});
+		</script>
+
 	</head>
 	<body class="index loading">
 	
@@ -133,9 +143,12 @@
 				</header>
 				<footer>
 					<ul class="buttons">
-						<li><form><input type="e-mail" name="emajl" class="emajl" placeholder="Type here your e-mail"></form></li> 
-						<li><a href="#" class="button special">Yep! Let's do it!</a></li>
+						<li><form name="myForm"><input type="e-mail" name="myText" class="emajl" placeholder="Type here your e-mail"></li> 
+						<li><input type=SUBMIT value="Yep! Let's do it!" class="button special" name="mySubmit"></li>
+						</form>
 					</ul>
+					<br>
+					<div id="div1" class="DispNone">Thank you! See you soon!</div>
 				</footer>
 			
 			</section>

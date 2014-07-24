@@ -882,6 +882,12 @@
 		#cta header {
 			margin-bottom: 2em;
 		}
+		.DispNone {
+			display: none;
+		}
+		.DispBlock {
+			display: block;
+		}
 
 /* Footer */
 
